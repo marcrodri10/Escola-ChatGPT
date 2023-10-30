@@ -25,8 +25,8 @@ include_once 'partials/header.tpl.php';
                         <td><?php echo $studentData['nombre']?></td>
                         <td><?php echo $studentData['apellidos']?></td>
                         <td><?php echo $studentData['email']?></td>
-                        <td><input type="text" name="exam" id="exam"></td>
-                        <td><input type="number" name="mark" id="mark" max="10" min="0" step="0.1"></td>
+                        <td><input type="text" name="exam" id="exam" required></td>
+                        <td><input type="number" name="mark" id="mark" max="10" min="0" step="0.1" required></td>
                     </tbody>
                 </table>
                 <button type="submit" class="btn btn-primary">Upload</button>

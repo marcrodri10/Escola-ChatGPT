@@ -22,7 +22,7 @@ and if the users is a student the page show exams marks of the different subject
             
 
             <?php
-                //if the user is a student show the exam marks
+                //if the user is a student show the exam marks if date is not null
                 if($userRole == 1){ 
                     $studentMarks = $_SESSION['studentMarks'];
                     if($studentMarks != null){

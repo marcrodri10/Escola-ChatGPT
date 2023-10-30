@@ -55,9 +55,9 @@ include_once 'partials/header.tpl.php';
                             if($userRole == 1){
                                 echo "<tr>
                                 <th scope='row'>". $userDataProfile['id']."</th>
-                                <td><input type='text' name='name' id='name' value='". $userDataProfile['nombre']."'></td>
-                                <td><input type='text' name='lastname' id='lastname' value='". $userDataProfile['apellidos']."'></td>
-                                <td><input type='text' name='email' id='email' value='". $userDataProfile['email']."'></td>
+                                <td><input type='text' name='name' id='name' value='". $userDataProfile['nombre']."' required></td>
+                                <td><input type='text' name='lastname' id='lastname' value='". $userDataProfile['apellidos']."' required></td>
+                                <td><input type='text' name='email' id='email' value='". $userDataProfile['email']."' required></td>
                                 <td><input type='date' name='birthdate' id='birthdate' value='". $userDataProfile['fecha_nacimiento']."'></td>
                                 <td><input type='text' name='address' id='address' value='". $userDataProfile['direccion']."'></td>
                             </tr>";

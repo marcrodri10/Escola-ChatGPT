@@ -49,7 +49,7 @@
                 [':id_alumno' => $studentId]
             );
             
-            //save into a session
+            
             //check if user is enrolled into the subject and save into an array
             $studentMarksArray =[];
             foreach($studentEnrollmentData as $data){
@@ -61,6 +61,7 @@
                     }
                 }
             }
+            //save into a session
             $_SESSION['studentMarks'] = $studentMarksArray;
             
         }
